@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="contactstyle.css" />
+	<title>Contact us</title>
+	<img src="Image/logo1.png" width="100%" height="200px" title="Home"/>
+<style>
+
+table
+{
+  border: 1px solid lightblue;
+  padding:50px;
+  box-shadow: 0px 0px 15px black;
+  background-image: url("Image/smbg.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+label
+{
+	width:150px;
+	color:black;
+	font-weight:bold;
+	text-align: right;
+	cursor:default;
+	 }
+
+h1
+{
+	font-size:2em;	
+	text-align:center;
+	font-family:Serif;
+   }
+
+h3
+{
+   font-size:25px;
+  }
+#contact p 
+{
+	color:black;
+    font-style:italic;
+ }
+
+input[type=submit]
+{
+	width:100px;
+	background:linear-gradient(lightblue,grey);
+	border:1px solid;
+	border_radius:10px;
+	border-color:navy;
+	box-shadow:0px 0px 15px navy;
+	color:black;
+	padding:10px 10px;
+}
+
+input[type=submit]:hover
+{
+	opacity:0.5;
+	cursor:pointer;
+}
+
+iframe
+{
+	border: 1px hidden black;
+	padding:0px 450px;
+}
+.under
+{
+	color:#00f;
+	border:1px hidden black;
+}
+h1
+{
+color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Movies 
+    </button>
+    <div class="dropdown-content">
+      <a href="m1.html">Insidious:The Last Key</a>
+	  <a href="m2.html">Justice League</a>
+	  <a href="m3.html">Ant-Man and The Wasp</a>
+	  <a href="m4.html">The Greatest Showman</a>
+	  </div>
+	  </div>
+  <a href="theater1.html">Movie In Theaters</a>
+  <a href="trailers.html">Movie Trailer</a>
+ <div class="dropdown">
+  <button class="dropbtn">Movie Review
+  </button>
+    <div class="dropdown-content">
+      <a href="review2.html">Insidious:The Last Key</a>
+	  <a href="review3.html">Justice League</a>
+	  <a href="review1.html">Ant-Man and The Wasp</a>
+	  <a href="review4.html">The Greatest Showman</a>
+	  </div>
+	  </div>
+  <a href="about us page.html">About Us</a>
+  <a href="contact us.html">Contact Us</a>
+  <div class="search-container">
+    <form action="index.html">
+      <input type="text" placeholder="Search Movie..." name="search">
+      <button type="submit"><img src="Image/search.png" height="10" width="10" /><i class="for-search"></i></button>
+    </form>
+  </div>
+  </div>
+    
+	<br>
+	<br>
+	<h1>Contact us :: Ask our team members!</h1>
+	
+	<form name="htmlform" method="post" action="html_form_send.php">
+	
+	<table align="center" width="450px">
+	<tr>
+	<td valign="top">
+		<label for="first_name">First Name</label>
+	</td>
+	<td valign="top">
+		<input  type="text" name="first_name" placeholder="First name..." maxlength="50" size="30">
+	</td>
+	</tr>
+	<tr>
+		<td valign="top"">
+		<label for="last_name">Last Name</label>
+	</td>
+	<td valign="top">
+		<input  type="text" name="last_name" placeholder="last name..." maxlength="50" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+		<label for="email">Email Address</label>
+	</td>
+	<td valign="top">
+		<input  type="text" name="email" placeholder="Your email..." maxlength="80" size="30">
+	</td>
+ 
+	</tr>
+	<tr>
+		<td valign="top">
+		<label for="telephone">Telephone Number</label>
+	</td>
+	<td valign="top">
+		<input  type="text" name="telephone" placeholder="Your number..." maxlength="30" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+		<label for="comments">Comments</label>
+	</td>
+	<td valign="top">
+		<textarea  name="comments" placeholder="Comments..." maxlength="1000" cols="25" rows="6"></textarea>
+	</td>
+ 
+	</tr>
+	<tr>
+	<td colspan="2" style="text-align:center">
+		<input type="submit" value="Submit">   
+	</td>
+	</tr>
+	</table>
+	
+	<h2 align="center">Our location</h2>
+	<iframe src="https://www.google.com/maps/d/embed?mid=11RLcvN0qD7AlGoptvyHMrNu8xVc&hl=en" width="450" height="400"></iframe>
+	
+	<p class="contact" align="center" style="color:white">For any enquiries, you can call us at 1-300-88-2525.
+	</br>We will be available during office hour.Or you can contact us at <a href="https://www.facebook.com" class="under">Facebook Page</a></p>
+	
+	</form>
+	<!--Footer-->
+<div class="botnavbar">
+  <p>Do Follow Us On:</p>
+  <a href="http://www.facebook.com"target="blank"><img src="Image/fb.png" height="30px" width="30px"/></a>
+  <a href="http://www.instagram.com"target="blank"><img src="Image/ig.png" height="30px" width="30px"/></a>
+  <a href="http://www.twitter.com"target="blank"><img src="Image/twitter.png" height="30px" width="30px"/></a>
+</div>
+</body>
+</html>

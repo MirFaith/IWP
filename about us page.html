@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+<link rel="stylesheet" type="text/css" href="about us nav.css" />
+<img src="Image/logo1.png" width="100%" height="200px" title="Home"/>
+<style>	
+html
+{
+	box-sizing:border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.title
+{
+	color:grey;
+}
+h1
+{
+	color:white;
+	font-family:impact;
+	text-align:center;
+	font-size:50px;
+	border:2px solid #CCCCCC;
+	border-color:black;
+	padding: 4px;
+	margin: 4px 4px 0px 4px;
+	float: center;
+}
+#us
+{
+	color:black;
+	padding-top:30px;
+	padding-left:30px;
+	padding-right:30px;
+	font-size:25px;
+	width:470px;
+	
+	margin:auto;
+	border-radius:10px;
+}
+h3
+{
+  font-family:Courier New;
+  font-size:2em;
+  font-style:italic;
+  color: #01786c;
+}
+#us p
+{
+	font-family:comic sans ms;
+	font-size:20px;
+	text-align:left;
+	color:white;
+	margin: 0;
+}
+.column
+{
+	float:left;
+	width:33.3%;
+	margin-bottom:16px;
+	padding:0 8px;
+	background-color: silver;
+}
+
+@media (max-width:650px)
+{
+	.column
+	{
+		width:100%;
+		display: block;
+	}
+}
+
+.card
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container
+{
+	padding:0 16px;
+}
+
+.container::after, .row::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.title
+{
+	color:grey;
+}
+
+.button
+{
+	border:1px solid grey;
+	outline:0;
+	display: inline-block;
+	padding: 8px;
+	color:white;
+	background-color: #000;
+	text-align:center;
+	cursor: pointer;
+	width:100px;
+}
+
+.button:hover
+{
+	background-color: #555;
+	border-radius:5px;
+	box-shadow:0px 0px 5px 5px grey;
+}
+
+.member
+{
+	border-radius:50%;
+	margin: 0px 0px 0px 100px;
+}
+a
+{
+	text-decoration: none;
+	color:white;
+	font-family:sans serif;
+}
+</style>
+</head>
+<body>
+	
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Movies 
+    </button>
+    <div class="dropdown-content">
+      <a href="m1.html">Insidious:The Last Key</a>
+	  <a href="m2.html">Justice League</a>
+	  <a href="m3.html">Ant-Man and The Wasp</a>
+	  <a href="m4.html">The Greatest Showman</a>
+	  </div>
+	  </div>
+  <a href="theater1.html">Movie In Theaters</a>
+  <a href="trailers.html">Movie Trailer</a>
+  <div class="dropdown">
+  <button class="dropbtn">Movie Review
+  </button>
+    <div class="dropdown-content">
+      <a href="review2.html">Insidious:The Last Key</a>
+	  <a href="review3.html">Justice League</a>
+	  <a href="review1.html">Ant-Man and The Wasp</a>
+	  <a href="review4.html">The Greatest Showman</a>
+	  </div>
+	  </div>
+  <a href="about us page.html">About Us</a>
+  <a href="contact us.html">Contact Us</a>
+  <div class="search-container">
+    <form action="index.html">
+      <input type="text" placeholder="Search Movie..." name="search">
+      <button type="submit"><img src="Image/search.png" height="10" width="10" /><i class="for-search"></i></button>
+    </form>
+    </div>
+</div>
+	<br>
+    <br>
+	<h1>About Us</h1>
+
+
+<div class="row">
+	<div class="column">
+		<div class="card">
+			<img src="Image/amrimalay.jpg" class="member" alt="Amri" style="width:50%">
+			<div class="container">
+			<h2>Mohamad Amirul Amri Bin Jantan</h2>
+			<h2>1161202335</h2>
+			<p class="title">Team Leader; 1st Member</p>
+			<p>Born in Kota Tinggi,Johor, live in Seri Kembangan. Have vision,courage,integrity,humility and focus along with 
+			</br>the ability to plan strategically and catalyze cooperation amongst the team.</p>
+			<p>amirulamri554@gmail.com</p>
+			<p><button class="button"><a href="https://www.instagram.com/_mirfake_/" target="_blank">Contact</a></button></p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="column">
+		<div class="card">
+			<img src="Image/azifh.jpg" class="member" alt="Azif" style="width:50%">
+			<div class="container">
+			<h2>Azif Bin Zulkiffli</h2>
+			<h2>1161202726</h2>
+			<p class="title">Web Designer; 2nd Member</p>
+			<p>Born in Wilayah Persekutuan, raised in Pahang, live in Kajang. Display a great deal of curiosity about many things, 
+			</br>constant asking question about anything and everything and may have broad interest in many related areas</p>
+			<p>zul.azif@gmail.com</p>
+			<p><button class="button"><a href="https://www.linkedin.com/in/azif-zulkiffli-2b7b3a158/?trk=onboarding-landing&dl=no" target="_blank">Contact</a></button></p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="column">
+		<div class="card">
+			<img src="Image/syahmi.jpg" class="member" alt="Syahmi" style="width:50%">
+			<div class="container">
+			<h2>Muhammad Syahmi Bin Baharin</h2>
+			<h2>1161202337</h2>
+			<p class="title">Web Designer ; 3rd Member</p>
+			<p>Born in Wilaya Persekutuan,live in Kota Damansara. Willing to take risk, often people who are described as a 
+			</br>high-risk taker or adventurous, or speculative. Posses a lot of wisdom.</p>
+			<p>syahmibaharin96@gmail.com</p>
+			<p><button class="button"><a href="https://www.instagram.com/itssyem/" target="_blank">Contact</a></button></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Footer-->
+<div class="botnavbar">
+  <p>Do Follow Us On:</p>
+  <a href="http://www.facebook.com"target="blank"><img src="Image/fb.png" height="30px" width="30px"/></a>
+  <a href="http://www.instagram.com"target="blank"><img src="Image/ig.png" height="30px" width="30px"/></a>
+  <a href="http://www.twitter.com"target="blank"><img src="Image/twitter.png" height="30px" width="30px"/></a>
+</div>
+</body>
+</html>

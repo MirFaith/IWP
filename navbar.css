@@ -1,0 +1,222 @@
+* {box-sizing: border-box;}
+
+body 
+{
+  margin: 0;
+  font-family: Arial;
+  background: url('Image/bg.jpg');
+   background-size:100%;
+   background-repeat:repeat-y;
+}
+
+.navbar
+ {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a
+ {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.dropdown 
+{
+	
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn 
+{
+	margin: 0;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #333;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+  background-color: #ddd;
+  color: black;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+   
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+	color: black;
+	
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+	color:black;
+}
+
+.navbar a.active 
+{
+  background-color: #45AF50;
+  color: white;
+}
+
+.navbar .search-container 
+{
+  float: right;
+}
+
+.navbar input[type=text]
+ {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button 
+{
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover 
+{
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px)
+{
+  .navbar .search-container
+  {
+    float: none;
+  }
+  .navbar a, .navbar input[type=text], .navbar .search-container button 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text]
+  {
+    border: 1px solid #ccc;  
+  }
+}
+.newfeatures
+{
+	background: lightgrey;
+	border: 1px groove;
+}
+.slides 
+{
+  width: 800px;
+  height: 800px;
+  margin:  auto;
+  position: relative;
+}
+.slide1,.slide2, .slide3, .slide4
+{
+  position: absolute;
+  width: 800px;
+  height: 400px;
+}
+
+.slide1 
+{
+    background: url('Image/m1.jpg') center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+}
+.slide2 
+{
+    background: url('Image/m2.jpg') center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 
+{
+    background: url('Image/m3.jpg') center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+.slide4
+{
+    background: url('Image/m4.jpg') center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+  .botnavbar 
+{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

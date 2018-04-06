@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movie</title>
+<link rel="stylesheet" type="text/css" href="navbar.css" />
+<img src="Image/logo1.png" width="100%" height="200px" title="Home"/>
+
+<style>
+#user
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#pass
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+span.pass
+{
+    float: right;
+    padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin: 0 auto;
+}
+
+#passw
+{
+    float: right;
+    padding-top: 1px;
+	padding-bottom: 1px;
+	margin: 0 auto;
+	color: blue;
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+.modalsignup p
+{
+    float: left;
+    align: left;
+    float: left;
+    padding-top: 1px;
+	padding-bottom: 1px;
+	margin: 0 auto;
+} 
+
+#terms
+{
+    float: right;
+	padding-top: 1px;
+	padding-bottom: 1px;
+    align: center;
+	color: blue;
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+.modal
+{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+.modalsignup 
+{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+button 
+{
+    background-color: lightblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+.cancelbtn 
+{
+    font-style:bold;
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.container 
+{
+    padding: 16px;
+}
+
+.modal-content 
+{
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.imgcontainer 
+{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.close 
+{
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus 
+{
+    color: red;
+    cursor: pointer;
+}
+
+.clearfix::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+.animate 
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom 
+{
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom 
+{
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+</head>
+<body>
+
+<!--Header-->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Movies 
+    </button>
+    <div class="dropdown-content">
+      <a href="m1.html">Insidious:The Last Key</a>
+	  <a href="m2.html">Justice League</a>
+	  <a href="m3.html">Ant-Man and The Wasp</a>
+	  <a href="m4.html">The Greatest Showman</a>
+	  </div>
+	  </div>
+  <a href="theater1.html">Movie In Theaters</a>
+  <a href="trailers.html">Movie Trailer</a>
+  <div class="dropdown">
+  <button class="dropbtn">Movie Review
+  </button>
+    <div class="dropdown-content">
+      <a href="review2.html">Insidious:The Last Key</a>
+	  <a href="review3.html">Justice League</a>
+	  <a href="review1.html">Ant-Man and The Wasp</a>
+	  <a href="review4.html">The Greatest Showman</a>
+	  </div>
+	  </div>
+  <a href="about us page.html">About Us</a>
+  <a href="contact us.html">Contact Us</a>
+  <div class="search-container">
+    <form action="https://www.google.com">
+      <input type="text" placeholder="Search Movie..." name="search">
+      <button  type="submit"><img src="Image/search.png" height="10" width="10" /><i class="for-search"></i></button>
+    </form>
+</div>
+  
+<button onclick="document.getElementById('id').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id" class="modal">
+  
+  <form class="modal-content animate" action="index.html">
+    <div class="imgcontainer">
+	<span onclick="document.getElementById('id').style.display='none'" 
+class="close" title="Close">&times;</span>
+      <img src="Image/avatar.png"height="250px" width="250px" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" id="user" placeholder="Enter Username" name="name" required>
+      <br>
+	  <br>
+      <label><b>Password</b></label>
+      <input type="password" id="pass" placeholder="Enter Password" name="pass" required>
+	  <br>
+	  <br>
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="pass">Forgot <a id="passw" href="forgot_pass.html">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<button onclick="document.getElementById('id1').style.display='block'">Sign Up</button>
+
+<div id="id1" class="modalsignup">
+  <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close">&times;</span>
+  <form class="modal-content animate" action="index.html">
+    <div class="container">
+	<label><b>Name</b></label>
+      <input type="text" id="user" placeholder="Enter Name" name="nam" required>
+      <br>
+	  <br>
+      <label><b>Email</b></label>
+      <input type="text" id="user" placeholder="Enter Email" name="email" required>
+      <br>
+	  <br>
+      <label><b>Password</b></label>
+      <input type="password" id="pass" placeholder="Enter Password" name="psw"required>
+      <br>
+	  <br>
+      <label><b>Retype Password</b></label>
+      <input type="password" id="pass" placeholder="Retype Password" name="psw-repeat" required>
+      <input type="checkbox" checked="checked"> Remember me
+	  <br>
+      <p>By creating an account you agree to our <a id="terms" href="policy.html">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id1').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</div>
+
+<div class="newfeatures">
+<hr>
+<h2><u><center>New Movie</center></u></h2>
+<hr>
+</div>
+<br>
+  <div class='slides'>
+  <div class='slide1'></div>
+  <div class='slide2'></div>
+  <div class='slide3'></div>
+  <div class='slide4'></div>
+</div>
+
+
+
+<!--Footer-->
+<div class="botnavbar">
+  <p>Do Follow Us On:</p>
+  <a href="http://www.facebook.com"target="blank"><img src="Image/fb.png" height="30px" width="30px"/></a>
+  <a href="http://www.instagram.com"target="blank"><img src="Image/ig.png" height="30px" width="30px"/></a>
+  <a href="http://www.twitter.com"target="blank"><img src="Image/twitter.png" height="30px" width="30px"/></a>
+</div>
+
+</body>
+</html>
